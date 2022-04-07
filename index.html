@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='style.css'>
+    <title>Command Injector`</title>
+  </head>
+  <body>
+    <h1>Command Injector</h1>
+
+    <input id = "textInput" placeholder="Enter Command Here...">
+    <input id = 'buttonInput' type="button" value="Submit">
+
+    <br>
+    <br>
+
+    <div class = 'none' id = 'dataDiv'></div>
+
+    <hr>
+    <div id = 'textOutput'></div>
+
+    <div id = 'manual' class="manual">
+      <h2>List of Common Commands</h2>
+      <span><strong>Show Folder Contents: </strong>Get-ChildItem -Name</span>
+      <br>
+      <span><strong>Show List of Drives: </strong>Get-PSDrive -PSProvider FileSystem</span>
+      <br>
+      <span><strong>Display Current Folder: </strong>pwd</span>
+      <br>
+      <span><strong>Enter a folder: </strong>cd &lt;foldername&gt;</span>
+      <br>
+      <span><strong>Go back a folder: </strong>cd..</span>
+      <br>
+      <span><strong>Display file content: </strong>Get-Content &lt;filename&gt;</span>
+      <br>
+      <span><strong></strong></span>
+    </div>
+
+    <div id = 'manualToggle' class = 'manualToggle' onclick = "
+    let a = document.getElementById('manual'); 
+    a.style.display = (a.style.display === 'none' ? 'block' : 'none')
+    ">View Help</div>
+
+    <script src = 'renderer.js'></script>
+
+  </body>
+</html>

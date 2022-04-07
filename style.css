@@ -1,0 +1,8 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+.dirElement {color: gray; padding: 10px;}
+.dirElement:hover {text-decoration: underline; color: rgb(39, 39, 39);}
+.none {display: none;}
+.manual {padding: 5px; text-align: center; position:fixed; top: 10px; right: 10px; height: 300px;
+    width: 700px; background-color: rgb(241, 241, 241); border: solid black 1px; display: none;}
+.manualToggle {position: fixed; padding: 5px; top: 10px; right: 10px; height: 20px; width: 75px;
+    background-color: black; color: white;}
